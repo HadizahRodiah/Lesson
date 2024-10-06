@@ -31,8 +31,8 @@ const Nav = () => {
           <div className="hidden md:flex space-x-8 font-bold">
             <a href="#home" className="hover:text-orange-700 transition-colors duration-300">Home</a>
             <a href="#service" className="hover:text-orange-700 transition-colors duration-300">service</a>
-            <a href="#tutor" className="hover:text-orange-700 transition-colors duration-300">Our Team</a>
-            <a href="#class" className="hover:text-orange-700 transition-colors duration-300">Courses</a>
+            <a href="#tutor" className="hover:text-orange-700 transition-colors duration-300">Team</a>
+            <a href="#Faq" className="hover:text-orange-700 transition-colors duration-300">FAQ</a>
             <a href="#reviews" className="hover:text-orange-700 transition-colors duration-300">Reviews</a>
             <a href="#footer" className="hover:text-orange-700 transition-colors duration-300">Contact</a>
           </div>
@@ -66,7 +66,7 @@ const Nav = () => {
           <>
             {/* Overlay */}
             <div
-              className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-40"
+              className="fixed inset-0 bg-transparent bg-opacity-30 backdrop-blur-sm z-40"
               onClick={toggleMenu}
             ></div>
 
@@ -80,8 +80,8 @@ const Nav = () => {
                 </div>
                 <a href="#home" className="block py-2 text-center font-bold hover:text-orange-700">Home</a>
                 <a href="#service" className="block py-2 text-center font-bold hover:text-orange-700">Service</a>
-                <a href="#tutor" className="block py-2 text-center font-bold hover:text-orange-700">Our Team</a>
-                <a href="#class" className="block py-2 text-center font-bold hover:text-orange-700">Courses</a>
+                <a href="#tutor" className="block py-2 text-center font-bold hover:text-orange-700">Team</a>
+                <a href="#accord" className="block py-2 text-center font-bold hover:text-orange-700">FAQ</a>
                 <a href="#reviews" className="block py-2 text-center font-bold hover:text-orange-700">Review</a>
                 <a href="#footer" className="block py-2 text-center font-bold hover:text-orange-700">Contact</a>
                 <a

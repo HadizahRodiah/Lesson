@@ -2,9 +2,8 @@ import React from 'react';
 import * as Icons from 'react-bootstrap-icons';
 
 const Footer = () => {
-  AOS.init();
   return (
-    <footer className='bg-green-700 text-white py-10 px-8 md:px-18 lg:px-24 w-full' data-aos="fade-up" id='footer'>
+    <footer className='bg-green-700 text-white py-10 px-8 md:px-18 lg:px-24 w-full' id='footer'>
       <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
         
         {/* Logo and Site Info */}

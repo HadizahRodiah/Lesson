@@ -5,9 +5,8 @@ import Tutor3 from './assets/Tutor3.jpg'
 import * as Icons from 'react-bootstrap-icons'
 
 const Tutor = () => { 
-  AOS.init();
   return (
-    <div className='bg-orange-500 flex flex-col'  id='tutor'> 
+    <div className='bg-orange-500 flex flex-col ' id='tutor'> 
       <div className='flex flex-col m-10 md:px-20 justify-center items-center'>
         <h1 className="text-3xl md:text-4xl font-bold mb-3 text-white">Meet The Tutors</h1>
         <p className='italic text-justify text-lg md:p-10 md:text-lg text-black'>
@@ -18,7 +17,7 @@ const Tutor = () => {
 
       <div className='flex flex-col md:flex-row items-center justify-between'>
         {/* Teacher 1 */}
-        <div data-aos="zoom-in-right" className='flex flex-col bg-gray-200 border-2 hover:border-4 m-5 border-green-700 text-white p-6 rounded-lg shadow-lg w-full md:w-80 transition-transform duration-300 hover:shadow-xl hover:scale-105'>
+        <div className='flex flex-col bg-gray-200 border-2 hover:border-4 m-5 border-green-700 text-white p-6 rounded-lg shadow-lg w-full md:w-80 transition-transform duration-300 hover:shadow-xl hover:scale-105'>
           <img src={Tutor1} alt="Director 1" className='rounded-full shadow-lg w-full md:w-48 mb-4 border-2 border-orange-500' />
           <div className='flex flex-col text-black'>
             {/* Teacher contact */}
@@ -37,7 +36,7 @@ const Tutor = () => {
         </div>
 
         {/* Teacher 2 */}
-        <div data-aos="zoom-in-left" className='flex flex-col bg-gray-200 border-2 hover:border-4 m-5 border-green-700 text-white p-6 rounded-lg shadow-lg w-full md:w-80 transition-transform duration-300 hover:shadow-xl hover:scale-105'>
+        <div className='flex flex-col bg-gray-200 border-2 hover:border-4 m-5 border-green-700 text-white p-6 rounded-lg shadow-lg w-full md:w-80 transition-transform duration-300 hover:shadow-xl hover:scale-105'>
           <img src={Tutor2} alt="Director 2" className='rounded-full shadow-lg w-full md:w-48 mb-4 border-2 border-orange-500' />
           <div className='flex flex-col text-black'>
             {/* Teacher contact */}
@@ -56,7 +55,7 @@ const Tutor = () => {
         </div>
 
         {/* Teacher 3 */}
-        <div data-aos="zoom-in-right" className='flex flex-col bg-gray-200 border-2 hover:border-4 m-5 border-green-700 text-white p-6 rounded-lg shadow-lg w-full md:w-80 transition-transform duration-300 hover:shadow-xl hover:scale-105'>
+        <div className='flex flex-col bg-gray-200 border-2 hover:border-4 m-5 border-green-700 text-white p-6 rounded-lg shadow-lg w-full md:w-80 transition-transform duration-300 hover:shadow-xl hover:scale-105'>
           <img src={Tutor3} alt="Director 3" className='rounded-full shadow-lg w-full md:w-48 mb-4 border-2 border-orange-500' />
           <div className='flex flex-col text-black'>
             {/* Teacher contact */}

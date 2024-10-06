@@ -82,7 +82,7 @@ const Home = () => {
                             className="object-contain max-w-full max-h-full absolute" 
                         />
                         {/*mobile screen */}
-                        <div className="m-20 text-black flex flex-col justify-center items-center md:hidden relative">
+                        <div className="m-20 text-black flex flex-col justify-center items-center z-40 md:hidden">
                         <button className=' mt-10 bg-white bg-opacity-20 border border-green-700 hover:bg-green-900 text-black p-2 rounded-lg shadow-lg'> <h3 className='text-black hover:text-white font-bold '>{homes[currentIndex].words}</h3></button>
                         <p className='italic bg-gray-300 bg-opacity-30 font-bold p-6 text-sm  text-black'>
               There is nothing serious about this website.Contact the developer for future Collaboration.

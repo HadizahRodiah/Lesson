@@ -25,14 +25,16 @@ const services = [
 ];
 
 const Services = () => {
+  AOS.init();
   return (
-    <section className="py-16 bg-gray-200" id="service">
+    <section className="py-16 bg-gray-200" data-aos="fade-up" id="service">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-black">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
+              data-aos="zoom-in-right"
               className="bg-orange-500 border-2 hover:bg-white hover:border-green-700 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl hover:scale-105"
             >
               <div className="text-5xl text-black mb-4">{service.icon}</div>

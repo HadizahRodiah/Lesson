@@ -7,16 +7,16 @@ const Accord = () => {
   const togglePanel = (panel) => {
     setOpenPanel(openPanel === panel ? null : panel);
   };
-
+  AOS.init();
   return (
-    <div className="w-full max-w-lg mx-auto mt-10 p-10 " id='accord'>
+    <div className="w-full max-w-lg mx-auto mt-10 p-10 " data-aos="fade-up" id='accord'>
       {/* Accordion Item 1 */}
       <h1 className='flex text-orange-500 justify-center mb-2 items-center text-2xl font-bold'>Frequently Asked Questions</h1>
       <p className='italic bg-gray-300 bg-opacity-30 font-bold p-6 text-sm  text-black'>
               There is nothing serious about this website.Contact the developer for future Collaboration.
               check the <span><a href='#service' className='underline text-green-700'>Services</a></span> we offer that makes us stands out,we ensure premium--satisfaction
             </p>
-      <div className="border border-orange-500 rounded-lg mb-2">
+      <div className="border border-orange-500 rounded-lg mb-2" data-aos="fade-up">
         <h2 className="bg-green-700 p-4 rounded-t-lg cursor-pointer" onClick={() => togglePanel(1)}>
           <button className="flex font-bold text-slate-900 justify-between w-full text-left">
           <Icons.Code width={20} height={20} className='text-orange-500'/> Question one
@@ -31,7 +31,7 @@ const Accord = () => {
       </div>
 
       {/* Accordion Item 2 */}
-      <div className="border border-gray-300 rounded-lg mb-2">
+      <div className="border border-gray-300 rounded-lg mb-2" data-aos="fade-up">
         <h2 className="bg-green-700 p-4 rounded-t-lg cursor-pointer" onClick={() => togglePanel(2)}>
           <button className="flex font-bold text-slate-900 justify-between w-full text-left">
           <Icons.Code width={20} height={20} className='text-orange-500'/> Question Two
@@ -46,7 +46,7 @@ const Accord = () => {
       </div>
 
       {/* Accordion Item 3 */}
-      <div className="border border-gray-300 rounded-lg mb-2">
+      <div className="border border-gray-300 rounded-lg mb-2" data-aos="fade-up">
         <h2 className="bg-green-700 p-4 rounded-t-lg cursor-pointer" onClick={() => togglePanel(3)}>
           <button className="flex font-bold text-slate-900 justify-between w-full text-left">
           <Icons.Code width={20} height={20} className='text-orange-500'/>  Question Three
@@ -61,7 +61,7 @@ const Accord = () => {
       </div>
 
       {/* Accordion Item 4 */}
-      <div className="border border-gray-300 rounded-lg mb-2">
+      <div className="border border-gray-300 rounded-lg mb-2" data-aos="fade-up">
         <h2 className="bg-green-700 p-4 rounded-t-lg cursor-pointer" onClick={() => togglePanel(4)}>
           <button className="flex font-bold text-slate-900 justify-between w-full text-left">
           <Icons.Code width={20} height={20} className='text-orange-500'/> Question Four

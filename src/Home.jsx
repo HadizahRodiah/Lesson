@@ -46,68 +46,79 @@ const Home = () => {
     }, []);
 
     return (
-           <div className='bg-gray-200 overflow-hidden h-screen w-screen relative w-full' id='home'>
-            <Nav/>
-                                    {/*screen image */}
-                <div className='grid w-screen md:grid-cols-2'>
-                    <div className='grid grid-col-1 h-screen  hidden md:block'>
-                      <div className='bg-gray-200 m-20 h-screen rounded-lg w-96 flex flex-col justify-center items-center'>
-                     <button className='bg-green-700 p-5 rounded-lg shadow-lg'> <h2 className='text-white text-2xl font-bold '>{homes[currentIndex].words}</h2> </button>
-                     <p className='italic font-bold p-6 text-lg text-black'>
-              There is nothing serious about this website.Contact the developer for future Collaboration.
-              check the <span><a href='#service' className='underline font-bold text-green-700 font-bold'>Services</a></span> we offer that makes us stands out,we ensure premium--satisfaction
-            </p>      <div className='flex flex-row items-center justify-center mt-2'>
-        <a
-          href="#reviews"
-          className='font-bold bg-green-700 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-orange-500 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
-          download
-        >
-          Reviews
-        </a>
-        <a
-          href='#footer'
-          className='font-bold bg-orange-500 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-green-900 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
-        >
-          Contact
-        </a>
-      </div>
-
-                      </div>                        
-                    </div>
-                    {/*screen image */}
-                    <div className='grid grid-col-1  h-screen'>
-                        <img 
-                            src={homes[currentIndex].img} 
-                            alt={`Slide ${homes[currentIndex].id}`} 
-                            className="object-contain max-w-full max-h-full absolute" 
-                        />
-                        {/*mobile screen */}
-                        <div className="m-20 text-black flex flex-col justify-center items-center z-40 md:hidden">
-                        <button className=' mt-10 bg-white bg-opacity-20 border border-green-700 hover:bg-green-900 text-black p-2 rounded-lg shadow-lg'> <h3 className='text-black hover:text-white font-bold '>{homes[currentIndex].words}</h3></button>
-                        <p className='italic bg-gray-300 bg-opacity-30 font-bold p-6 text-sm  text-black'>
-              There is nothing serious about this website.Contact the developer for future Collaboration.
-              check the <span><a href='#service' className='underline text-green-700'>Services</a></span> we offer that makes us stands out,we ensure premium--satisfaction
-            </p>
-            <div className='flex flex-row md:hidden items-center justify-center mt-2'>
-        <a
-          href="#reviews"
-          className='font-bold bg-green-700 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-orange-500 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
-          
-        >
-          Reviews
-        </a>
-        <a
-          href='#footer'
-          className='font-bold bg-orange-500 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-green-900 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
-        >
-          Contact
-        </a>
-      </div>
-
+        <div className='bg-gray-200 overflow-hidden h-screen w-screen relative' id='home'>
+            <Nav />
+            <div className='w-screen flex flex-col  md:flex-row'>
+                {/* Left Column - Text Content */}
+                <div className='flex-1 h-screen flex justify-center items-center'>
+                    <div className='bg-gray-200 mx-5 md:m-20 h-auto hidden md:inline md:h-screen rounded-lg flex flex-col justify-center items-center'>
+                        <button className='bg-green-700 p-5 rounded-lg shadow-lg'>
+                            <h2 className='text-white text-2xl font-bold'>{homes[currentIndex].words}</h2>
+                        </button>
+                        <p className='italic font-bold p-6 text-lg text-black text-center'>
+                            There is nothing serious about this website. Contact the developer for future collaboration.
+                            Check the <span><a href='#service' className='underline font-bold text-green-700'>Services</a></span> we offer that make us stand out; we ensure premium satisfaction.
+                        </p>
+                        <div className='flex flex-row items-center justify-center mt-2'>
+                            <a
+                                href="#reviews"
+                                className='font-bold bg-green-700 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-orange-500 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
+                                download
+                            >
+                                Reviews
+                            </a>
+                            <a
+                                href='#footer'
+                                className='font-bold bg-orange-500 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-green-900 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
+                            >
+                                Contact
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div className='bg-transparent mx-5  m-20 md:m-20 h-auto z-40 relative md:hidden md:h-screen rounded-lg flex flex-col justify-center items-center'>
+                        <button className='bg-green-700 p-2 m-10 bg-transparent border-2 border-orange-500 rounded-lg shadow-lg'>
+                            <h2 className='text-black  text-2xl font-bold'>{homes[currentIndex].words}</h2>
+                        </button>
+                        <p className='italic bg-opacity-30 bg-gray-200 font-bold p-6 text-lg text-black text-center'>
+                            There is nothing serious about this website. Contact the developer for future collaboration.
+                            Check the <span><a href='#service' className='underline font-bold text-green-700'>Services</a></span> we offer that make us stand out; we ensure premium satisfaction.
+                        </p>
+                        <div className='flex flex-row items-center justify-center mt-2'>
+                            <a
+                                href="#reviews"
+                                className='font-bold bg-green-700 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-orange-500 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
+                              
+                            >
+                                Reviews
+                            </a>
+                            <a
+                                href='#footer'
+                                className='font-bold bg-orange-500 text-white mx-2 mb-2 hover:text-black hover:bg-transparent border hover:border-green-900 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-lg'
+                            >
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+
+                {/* Right Column - Image */}
+                <div className='flex-1 h-[50vh] md:h-screen flex justify-center hidden md:block items-center'>
+                    <img
+                        src={homes[currentIndex].img}
+                        alt={`Slide ${homes[currentIndex].id}`}
+                        className="object-contain max-w-full max-h-full"
+                    />
+                </div>
+                <div className='flex-1 h-[100vh] w-screen absolute flex md:hidden justify-center items-center '>
+                    <img
+                        src={homes[currentIndex].img}
+                        alt={`Slide ${homes[currentIndex].id}`}
+                        className="object-contain max-w-full max-h-full"
+                    />
+                </div>
             </div>
+        </div>
     );
-}
+};
+
 export default Home;

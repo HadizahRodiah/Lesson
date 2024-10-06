@@ -46,7 +46,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="bg-gray-200 overflow-hidden h-screen w-screen relative" id="home">
+        <div className="bg-gray-200 overflow-hidden min-h-screen w-screen relative" id="home">
             <Nav />
             {/* Screen Image */}
             <div className="grid w-screen md:grid-cols-2">
@@ -78,11 +78,11 @@ const Home = () => {
                 </div>
 
                 {/* Right Column for image and content */}
-                <div className="relative h-screen overflow-hidden">
+                <div className="relative h-screen md:h-auto overflow-hidden">
                     <img
                         src={homes[currentIndex].img}
                         alt={`Slide ${homes[currentIndex].id}`}
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-[80vh] md:h-full" // Adjust image height for mobile
                     />
 
                     {/* Mobile screen */}

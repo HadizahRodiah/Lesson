@@ -82,7 +82,7 @@ const Review = () => {
 
       <div className="relative flex flex-col md:flex-row items-center justify-between px-5 mb-5">
         {/* Slide transition parents */}
-        <div className="bg-green-700 mb-10 hover:bg-orange-500 hover:text-black text-white p-8 rounded-lg shadow-lg max-w-md transition-all duration-500 ease-in-out transform">
+        <div className="bg-green-700 mb-10 hover:bg-orange-500 hover:text-black text-white p-4 m-2 rounded-lg shadow-lg max-w-md transition-all duration-500 ease-in-out transform">
         <h2 className="text-4xl font-bold mb-6 text-slate-900">Parents</h2>
         <div className='justify-center item-center flex'>
         <Icons.PersonFill className='text-slate-900 ' width={60} height={60}/>
@@ -105,7 +105,7 @@ const Review = () => {
       </div>
         </div>
         {/*slide for students */}
-        <div className="bg-green-700 hover:bg-orange-500 mb-10 hover:text-black text-white p-8 rounded-lg shadow-lg max-w-md transition-all duration-500 ease-in-out transform">
+        <div className="bg-green-700 hover:bg-orange-500 mb-10 hover:text-black text-white p-4 m-2 rounded-lg shadow-lg max-w-md transition-all duration-500 ease-in-out transform">
         <h2 className="text-4xl font-bold mb-6 text-slate-900">Students</h2>
         <div className='justify-center item-center flex'>
         <Icons.PersonFill className='text-slate-900 ' width={60} height={60}/>

@@ -28,7 +28,7 @@ const Nav = () => {
           </div>
 
           {/* Navigation Links for Desktop */}
-          <div className="hidden md:flex space-x-8 font-bold">
+          <div className="hidden md:flex space-x-6 font-bold">
             <a href="#home" className="hover:text-orange-700 transition-colors duration-300">Home</a>
             <a href="#service" className="hover:text-orange-700 transition-colors duration-300">service</a>
             <a href="#tutor" className="hover:text-orange-700 transition-colors duration-300">Team</a>
